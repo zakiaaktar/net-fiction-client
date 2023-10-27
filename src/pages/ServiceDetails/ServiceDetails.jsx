@@ -1,9 +1,8 @@
-import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 
 const ServiceDetails = () => {
     const data = useLoaderData();
-    console.log(data);
+    //console.log(data);
     const { _id, title, description, img, price } = data;
 
 
