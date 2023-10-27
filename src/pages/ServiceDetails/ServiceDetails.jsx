@@ -19,9 +19,11 @@ const ServiceDetails = () => {
             <p className='text-xl text-orange-500 font-bold text-semibold'>Price: ${price}</p>
             <div className="card-actions justify-center">
 
-                <Link to={`/checkout/${_id}`}>
-                    <button className="btn font-bold bg-orange-500 rounded-full mt-3 pr-24 pl-24 border-none">Proceed Ckecout</button>
+                <Link to={`/book/${_id}`}>
+                    <button className="btn font-bold bg-orange-500 rounded-full mt-3 pr-24 pl-24 border-none">Booked</button>
                 </Link>
+
+
             </div>
         </div>
 

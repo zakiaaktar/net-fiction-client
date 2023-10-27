@@ -1,10 +1,20 @@
 import { Link, NavLink } from "react-router-dom";
 import { CgMenuLeft} from "react-icons/cg";
+import { useContext } from "react";
+import { AuthContext } from "../../../providers/AuthProvider";
 //import logo from "../assets/carzane6 (1).png";
 
 
 
 const NavBar = () => {
+  const { user } = useContext(AuthContext);
+
+
+
+  const handleLogOut = () => {
+    
+  }
+
 
 
     const navLinks = (
@@ -29,7 +39,42 @@ const NavBar = () => {
                   About
                 </NavLink>
               </li>
-          <li>
+
+
+
+
+
+
+              { user?.email ?  <>
+                <li>
+            <NavLink onClick={handleLogOut}
+              to="/logout"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-black underline" : ""
+              }
+            >
+              LogOut
+            </NavLink>
+          </li>
+        </> 
+        : <li>
+        <NavLink
+          to="/login"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-black underline" : ""
+          }
+        >
+          Login
+        </NavLink>
+      </li>
+       }
+
+
+
+
+
+
+          {/* <li>
             <NavLink
               to="/login"
               className={({ isActive, isPending }) =>
@@ -38,8 +83,8 @@ const NavBar = () => {
             >
               Login
             </NavLink>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <NavLink
               to="/signup"
               className={({ isActive, isPending }) =>
@@ -48,7 +93,7 @@ const NavBar = () => {
             >
               Sign Up
             </NavLink>
-          </li>
+          </li> */}
     
           { (
             <>
