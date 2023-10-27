@@ -1,48 +1,24 @@
 [
     { 
         "service_id": "01",
-        "title": "Crystal Flower",
-        "img": "https://i.ibb.co/m0nhrrT/Untitled-design-4.jpg",
-        "price": "20.00",
-        "description": "Beautiful Crystal Flower showpiece with impressive colours"
+        "title": "Home Broadband",
+        "img": "https://i.ibb.co/n3dJpBr/Untitled-design-2.jpg",
+        "price": "100.00",
+        "description": "Home broadband is a type of internet service that provides fast and reliable connectivity to homes. "
     },
     { 
         "service_id": "02",
-        "title": "Handicrafts Decorative Items",
-        "img": "https://i.ibb.co/XZWbb02/Untitled-design-1.jpg",
-        "price": "10.00",
-        "description": "Beautiful Hand crafted colorful decorative items."
+        "title": "Global Broadband",
+        "img": "https://i.ibb.co/V2bH2SP/Untitled-design-1.jpg",
+        "price": "500.00",
+        "description": "Global Broadband refers to the availability and accessibility of high-speed internet connectivity on a worldwide scale."
     },
     
     { 
         "service_id": "03", 
-        "title": "Artistic Painted",
-        "img": "https://i.ibb.co/Wk3dWpX/Untitled-design-2.jpg",
-        "price": "10.00",
-        "description": "Artistic painted colorful handcrafted Products."
-    },
-    
-    { 
-        "service_id": "04",
-        "title": "Showpiece",
-        "img": "https://i.ibb.co/LpK39BG/Untitled-design-5.jpg",
-        "price": "20.00",
-        "description": "Beautiful Floral Design Crystal/ Glass White,Pink,Yellow Pot/Showpiece."
-        
-    },
-    
-    { 
-        "service_id": "05",
-        "title": "Handicrafts",
-        "img": "https://i.ibb.co/tmqr2Lh/Untitled-design.jpg",
-        "price": "15.00",
-        "description": "Hand made heavy work Ambabari Elephant Sawari of King Lucky Charm multi color with clean finish."
-    },
-    {  
-        "service_id": "06",
-        "title": "Table Lamp",
-        "img": "https://i.ibb.co/nnMM34h/Untitled-design-3.jpg",
-        "price": "10.00",
-        "description": "Antique Marble Table Lamp, Marble Showpiece, Home Decor Item."
-    }
+        "title": "Cloud Connect Services",
+        "img": "https://i.ibb.co/42vn4tJ/Untitled-design-4.jpg",
+        "price": "800.00",
+        "description": "Cloud Connect Services are essential for organizations looking to leverage cloud computing resources while maintaining a seamless and efficient network infrastructure. "
+    }   
 ]
