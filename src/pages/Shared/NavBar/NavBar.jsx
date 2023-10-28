@@ -7,13 +7,19 @@ import { AuthContext } from "../../../providers/AuthProvider";
 
 
 const NavBar = () => {
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
 
 
 
   const handleLogOut = () => {
-    
-  }
+    logOut()
+    .then(() => {
+      console.log("user logged out");
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+  };
 
 
 
@@ -38,7 +44,7 @@ const NavBar = () => {
                 >
                   About
                 </NavLink>
-              </li>
+          </li>
 
 
 
@@ -47,15 +53,26 @@ const NavBar = () => {
 
               { user?.email ?  <>
                 <li>
-            <NavLink onClick={handleLogOut}
-              to="/logout"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-black underline" : ""
-              }
-            >
-              LogOut
-            </NavLink>
-          </li>
+                <NavLink
+                  to="/bookings"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-black underline" : ""
+                  }
+                >
+                  My Bookings
+                </NavLink>
+              </li>  
+
+              <li> <button onClick={handleLogOut}>
+                <NavLink 
+                  className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "text-black underline" : ""
+                 }
+                >
+                  Log Out
+                </NavLink>
+                </button>
+              </li>
         </> 
         : <li>
         <NavLink
